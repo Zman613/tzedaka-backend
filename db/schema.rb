@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2020_07_28_072508) do
 
   create_table "charities", force: :cascade do |t|
     t.string "name"
-    t.string "photo"
+    t.string "photo_url"
     t.integer "balance"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 2020_07_28_072508) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
-    t.string "photo"
+    t.string "photo_url"
     t.integer "balance"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
