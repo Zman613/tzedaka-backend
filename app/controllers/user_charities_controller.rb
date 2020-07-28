@@ -1,0 +1,2 @@
+class UserCharitiesController < ApplicationController
+end
