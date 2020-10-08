@@ -2,7 +2,7 @@ class CharitiesController < ApplicationController
   before_action :find_charity, only: [:show, :edit, :update]
 
   def index
-    charities = Charity.all
+    charities = Charity.all.sort { |a, b| a.name.downcase <=> b.name.downcase}
     render json: charities
   end
 
