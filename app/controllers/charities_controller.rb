@@ -2,7 +2,8 @@ class CharitiesController < ApplicationController
   before_action :find_charity, only: [:show, :edit, :update]
 
   def index
-    @charities = Charity.all
+    charities = Charity.all
+    render json: charities
   end
 
   def show
